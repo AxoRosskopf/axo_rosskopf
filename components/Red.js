@@ -23,10 +23,11 @@ const Red = () => {
   return (
     <motion.div className={redStyle.all} >
        <div className={redStyle.container} >
-        <Canvas camera={{ position: [0, 0, 4], fov:58 }}>
+        <Canvas camera={{ position: [0, 0, 3], fov:40 }}>
           {/* <ambientLight color={"white"} intensity={1}/> */}
-          {/* <spotLight intensity={2} angle={0.1} penumbra={1} position={[10, 10, 20]} castShadow /> */}
-          <spotLight intensity={0.5} angle={-0.2} penumbra={1} position={[-10, 10, -20]} castShadow />
+          <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[60, 40, 80]} castShadow />
+          <spotLight intensity={0.5} angle={-0.2} penumbra={1} position={[-30, 10, -20]} castShadow />
+          <spotLight intensity={0.1} angle={-0.2} penumbra={1} position={[0, -30, 0]} castShadow />
           <OrbitControls autoRotate autoRotateSpeed={3} enableZoom={false}/>
             <Model />
           <AsciiRenderer fgColor="white" bgColor="none" />
@@ -44,7 +45,7 @@ const Red = () => {
     characters = ' .:-<*=%@ ',
     invert = true,
     color = false,
-    resolution = 0.15
+    resolution = 0.19
   }) {
     // Reactive state
     const { size, gl, scene, camera } = useThree()
