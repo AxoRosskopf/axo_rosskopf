@@ -1,12 +1,12 @@
 import { Suspense } from 'react'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/gltfloader'
 
 const Model = () => {
-    const gltf = useLoader(GLTFLoader, './model.gltf')
+    const obj = useLoader(OBJLoader, './1.obj')
   return (
     <Suspense>
-        <primitive object={gltf.scene}/>
+        <primitive object={obj}/>
     </Suspense>
   )
 }

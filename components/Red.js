@@ -24,8 +24,8 @@ const Red = () => {
     <motion.div className={redStyle.all} >
        <div className={redStyle.container} >
         <Canvas camera={{ position: [0, 0, 4], fov:58 }}>
-          <ambientLight color={"white"} intensity={5}/>
-          <spotLight intensity={2} angle={0.1} penumbra={1} position={[10, 10, 20]} castShadow />
+          {/* <ambientLight color={"white"} intensity={1}/> */}
+          {/* <spotLight intensity={2} angle={0.1} penumbra={1} position={[10, 10, 20]} castShadow /> */}
           <spotLight intensity={0.5} angle={-0.2} penumbra={1} position={[-10, 10, -20]} castShadow />
           <OrbitControls autoRotate autoRotateSpeed={3} enableZoom={false}/>
             <Model />
