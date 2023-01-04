@@ -19,7 +19,7 @@ const Landing = () => {
     <div className={landingStyle.center}>
       <motion.div className={landingStyle.box} style={{y:y3}}>
       <motion.video autoPlay muted loop className={landingStyle.video} style={{y:y2}} >         
-        <source src="/bg.mp4" />       
+        <source src="/bg.webm" />       
       </motion.video>
         <motion.div className={landingStyle.text_box} style={{y:y1}}>
           <h1>C O M P U T E R_</h1>
