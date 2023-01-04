@@ -1,0 +1,237 @@
+.text{
+    width: 45%;
+    font-size: 4rem;
+    text-align: right;
+    margin: 7rem;
+
+}
+.text_box{
+    display: flex;
+    justify-content: flex-end;
+}
+.options{
+    cursor: pointer;
+    border-top: 1px solid white;
+    padding-top: 1rem ;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.options_box{
+    margin: 4rem 7rem 7rem 4rem ;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.square{
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    margin:0.5rem;
+}.square_a{
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    margin:0.5rem;
+    background-color: white;
+}
+.square:hover{
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    margin:0.5rem;
+    background-color: white;
+}
+
+.options_num{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.content{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: [first] 33% [line2] 33% [end] 33%;
+    grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 25% [fourty-line] 25% [last-line];
+    font-size: 2rem;
+    min-height: 700px;
+}
+
+.one{
+    transition:  all 0.1s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: row1-start;
+    grid-row-end:fourty-line;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.one:hover{
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: row1-start;
+    grid-row-end:fourty-line;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+.two{
+    transition:  all 0.1s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: fourty-line;
+    grid-row-end:last-line;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.two:hover{
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: fourty-line;
+    grid-row-end:last-line;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.three{
+    transition:  all 0.1s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end:2;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.three:hover{
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end:2;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.four{
+    transition:  all 0.1s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 2;
+    grid-row-end:5;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.four:hover{
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 2;
+    grid-row-end:5;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.five{
+    transition:  all 0.1s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end:3;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.five:hover{
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end:3;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.six{
+    transition:  all 0.1s ease-out;
+    cursor: pointer;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 3;
+    grid-row-end:5;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.six:hover{
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    grid-row-start: 3;
+    grid-row-end:5;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.links{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.x{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.x:hover{
+    text-decoration: none;
+    color:#8F2020;
+}
+.li{
+    cursor: pointer;
+    text-decoration: none;
+}
+.li:hover{
+    text-decoration: underline;
+}
